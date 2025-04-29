@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ProyectoMongoDBESP32 # Nombre del Blueprint de Render
+    runtime: python
+    repo: https://github.com/jaque-27/Proyecto_Mongo_ESP32 # Link del repositorio de GitHub
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://jaque123:jaque1234@cluster0.xvegw.mongodb.net/ #Modificar con tus credenciales de acceso
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+version: "1"
