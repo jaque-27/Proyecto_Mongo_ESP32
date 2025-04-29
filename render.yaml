@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Proyecto_Mongo_ESP32 # Nombre del Blueprint de Render
+    name: ProyectoMongoDBESP32 # Nombre del Blueprint de Render
     runtime: python
     repo: https://github.com/jaque-27/Proyecto_Mongo_ESP32 # Link del repositorio de GitHub
     plan: free
